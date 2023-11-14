@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<style>
+    .box{
+        width: 550px;
+        height: 450px;
+        padding: 10px;
+        border: 5px solid rgb(14, 0, 0);
+        border-radius: 12%;
+        margin: 10px;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .dis_kisim{
+        justify-content: center; 
+        width:100%; height:100%; 
+        position: absolute; 
+        align-items: center; 
+        display: flex;
+    }
+    input{
+        border: 3px solid black;
+        border-radius: 10%;
+        
+    }
+    .giris{
+        padding: 10px 0px;
+        justify-content: center;
+        width: 100%;
+    }
+    .label{
+        text-align: center;
+        padding: 20px 10px;
+        width: 100%;
+    }
+    #sifre{
+        color: blue;
+    }
+    .butonlar{
+        height: 35px;
+    }
+    button{
+        width: 100px;
+        height: 35px;
+        font-size: 20px;
+        margin-top: 10%;
+        margin-left: 7%;
+        text-align: center;
+       
+
+    }
+    .foto{
+    position: absolute;
+    left: 44%;
+    top: 10%;
+    }
+
+    a{
+        color: black;     
+    }
+    .kayitOl{
+        width: 100%;
+        justify-content: center;
+        padding: 20px;
+
+    }
+
+
+</style>
+
+<body>
+<center>
+    
+    <div class="foto">
+        <img src="login.png">
+
+    </div>
+    <div class="dis_kisim">
+        <div class="box">
+            
+            <div class="giris">
+                <div class="label">
+                    <label for="mail">mail : </label>
+                    <input type="text" id="mail" />  
+                </div>
+                <div class="label">
+                    <label for="sifre">şifre : </label>
+                    <input type="text" id="sifre" />
+                </div>
+                <div class="kayitOl">
+                    <a href="#" id="kayit">Kayıt ol</a>
+                    
+                    <a href="#" id="sifreUnut">Şifreni mi unuttun?</a>
+                </div>
+                <div class="butonlar">
+                    <br>
+                    <button>Giriş</button>
+                </div>         
+            </div>      
+            
+        </div>
+    </div>
+</center>
+
+
+    
+    
+
+</body>
+</html>

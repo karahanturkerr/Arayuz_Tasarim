@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
+
+body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+   
 }
 
 header {
@@ -26,6 +28,7 @@ main {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 h1 {
@@ -87,8 +90,26 @@ a {
 }
 
 a:hover {
-    color: #fff; /* Fare üzerine geldiğinde yeni renk */
+    color: #fff; 
 }
+
+
+.main-image {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+
+
+ .main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
+
+
+
 
     </style>
 </head>
@@ -103,12 +124,15 @@ a:hover {
         </ul>
     </nav>
 </header>
-<body>
-<main>
 
-</main>
-     <footer>
-        <p>&copy; 2023 Genetik Kod Projesi</p>
-    </footer>
+<body>    
+
+    <div  class="main-image">
+        <img src="gif.gif" alt="Genomik Veri Animasyonu">
+    </div>
+    
 </body>
+<footer>
+    <p>&copy; 2023 Genetik Kod Projesi</p>
+</footer>
 </html>

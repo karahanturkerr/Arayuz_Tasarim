@@ -30,7 +30,7 @@
                 </div>
                 <div class="error error-txt">Password can't be blank</div>
             </div>
-            <div class="pass-txt"><a href="#">Forgot password?</a></div>
+            <div class="pass-txt"><a href="forgotPassword.html">Forgot password?</a></div>
             <input type="submit" onclick="redirectToMain()" value="Login" > 
             
         </form>
@@ -86,6 +86,10 @@
     }
     function redirectToMain() {          
         var mainPageURL = "singUp.html";            
+        window.location.href = mainPageURL;
+    }
+    function redirectToMain() {          
+        var mainPageURL = "forgotPassword.html";            
         window.location.href = mainPageURL;
     }
 	

@@ -12,7 +12,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #00e6ee;
+    background: #007BFF;
 }
 
 ::selection {
@@ -32,6 +32,7 @@ body {
 .wrapper header {
     font-size: 35px;
     font-weight: 600;
+    color: #5372F0;
 }
 
 .wrapper form {
@@ -168,5 +169,5 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background: #2c52ed;
+    background: #5372F0;
 }

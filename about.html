@@ -8,6 +8,45 @@
     <style>
 
 
+.team-member {
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.member-info {
+    flex: 1;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #fff; 
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
     </style>
 </head>
 <header>
@@ -21,9 +60,39 @@
         </ul>
     </nav>
 </header>
+
+
 <body>
     
-    
+    <section class="team-member">
+        <img src="member1.jpg" alt="Ekip Üyesi 1">
+        <div class="member-info">
+            <h2>İbrahim Yegen</h2>
+            <p>Full Stack Developer</p>
+            <p>10 yıllık deneyime sahip. Web geliştirme konusunda uzmanlık alanları arasında JavaScript, Python ve React bulunuyor.</p>
+            <a href="https://www.linkedin.com/in/ibrahimyegen/" target="_blank">LinkedIn Profili</a>
+        </div>
+    </section>
+
+    <section class="team-member">
+        <img src="member2.jpg" alt="Ekip Üyesi 2">
+        <div class="member-info">
+            <h2>Karahan Türker</h2>
+            <p>UI-UX Designer</p>
+            <p>5 yıl tasarım deneyimi. Kullanıcı deneyimi ve kullanıcı arayüzü konusunda uzmanlaşmış, sürdürülebilir ve estetik tasarımlar oluşturuyor.</p>
+            <a href="https://www.linkedin.com/in/karahantürker/" target="_blank">LinkedIn Profili</a>
+        </div>
+    </section>
+
+    <section class="team-member">
+        <img src="member3.jpg" alt="Ekip Üyesi 3">
+        <div class="member-info">
+            <h2>Ayetullah Bakan</h2>
+            <p>.Net Developer</p>
+            <p>Proje yönetimi konusunda 7 yıllık deneyime sahip. Takım koordinasyonu ve proje planlaması konusunda uzman.</p>
+            <a href="https://www.linkedin.com/in/ayetullahbakan/" target="_blank">LinkedIn Profili</a>
+        </div>
+    </section>
     
 </body>
 <footer>

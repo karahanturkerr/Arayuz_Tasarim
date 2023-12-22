@@ -4,65 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="style.css">
 </head>
 <style>
     
-/* Form etiketleri */
-form label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333; /* Etiket rengi */
+
+
+.container {
+    display: flex;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Form giriş alanları */
-form input[type="text"],
-form textarea {
+.left-panel {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-panel img {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    height: auto;
+    transition: transform 0.3s ease;
 }
 
-/* Form gönder düğmesi */
-form input[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
+.left-panel:hover img {
+    transform: scale(1.1);
+}
+
+.right-panel {
+    flex: 2;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    margin-top: 10px;
+    color: #555;
+    cursor: pointer;
+    transition: font-size 0.3s ease;
+}
+
+.form-label:hover {
+    font-size: 12px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-radius 0.3s ease;
+}
+
+textarea {
+    height: 120px;
+}
+
+input:focus,
+textarea:focus {
+    border-radius: 8px;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-/* Form gönder düğmesi üzerine gelindiğinde */
-form input[type="submit"]:hover {
-    background-color: #555;
+.submit-button:hover {
+    background-color: #45a049;
 }
 
-/* İletişim bilgileri */
-p {
-    font-size: 18px;
-    text-align: center;
-    margin-top: 20px;
-    color: #333; /* İletişim bilgileri metin rengi */
-}
 
-/* İletişim bilgileri içindeki linkler */
-p a {
-    color: #333; /* Link rengi */
-    text-decoration: none;
-    margin: 0 10px;
-}
 
-/* İletişim bilgileri içindeki linklere hover efekti eklemek */
-p a:hover {
-    color: #ff9900;
-}
-.ekip{
-    font-size: 20px;
-    color: #333;
-}
 
 
 </style>
@@ -70,7 +103,7 @@ p a:hover {
     <h1>Genetik Kod Şifreleme ve Çözme</h1>
     <nav>
         <ul>
-            <li><a href="index.html">Menu</a></li>
+            <li><a href="main.html">Ana Sayfa</a></li>
             <li><a href="encryption.html">Şifreleme</a></li>
             <li><a href="about.html">Hakkımızda</a></li>
             <li><a href="contact.html">İletişim</a></li>
@@ -79,27 +112,29 @@ p a:hover {
 </header>
 <body>
     <main>
-        <h2>Proje Ekibi ile İletişime Geçin</h2>
-
-        <form>
-            <label for="name">Adınız:</label>
-            <input type="text" id="name" name="name"><br>
+       
+        <div class="container">
+            <div class="left-panel">
+                <img src="mailbox.jpg">
+            </div>
+            <div class="right-panel">
+                <h2>Contact Us</h2>
+                <form>
+                    <label for="name">Adınız:</label>
+                    <input type="text" id="name" name="name">
+                    
+                    <label for="email">E-posta Adresiniz:</label>
+                    <input type="text" id="email" name="email">
+                    
+                    <label for="message">Mesajınız:</label>
+                    <textarea id="message" name="message"></textarea>
+                    
+                    <input class="submit-button" type="submit" value="Gönder">
+                </form>
+            </div>
+        </div>
         
-            <label for="email">E-posta Adresiniz:</label>
-            <input type="text" id="email" name="email"><br>
         
-            <label for="message">Mesajınız:</label>
-            <textarea id="message" name="message"></textarea><br>
-        
-            <input type="submit" value="Gönder">
-        </form>
-        
-        <p class="ekip">Proje Ekibi İletişim Bilgileri:</p> 
-        <p>
-            İbrahim Yegen: <a href="mailto:032090055@ogr.uludag.edu.tr">032090055@ogr.uludag.edu.tr</a> <br>
-            Ayetullah Bakan: <a href="mailto:032090046@ogr.uludag.edu.tr">032090046@ogr.uludag.edu.tr</a> <br>
-            Karahan Türker: <a href="mailto:032090039@ogr.uludag.edu.tr">032090039@ogr.uludag.edu.tr</a>
-        </p>
         
     </main>
     <footer>

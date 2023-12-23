@@ -11,38 +11,51 @@
     width: 100%;
     height: 975px;
     overflow: hidden;
+    
+    background-size: cover; 
 }
 
+.main-image img {
+    display: none;
+}
+body{
+    background-image: url('gif.gif');
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
 
- .main-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} 
+.transparent{
+    background-color: transparent;
+}
 
+a{
+    color: white;
+}
     </style>
 </head>
-<header>
-    <h1>Genetik Kod Şifreleme ve Çözme</h1>
-    <nav>
-        <ul>
-            <li><a href="main.html">Ana Sayfa</a></li>
-            <li><a href="encryption.html">Proje</a></li>
-            <li><a href="about.html">Hakkımızda</a></li>
-            <li><a href="contact.html">İletişim</a></li>
-        </ul>
-    </nav>
-</header>
 
-<body>    
 
-    <div  class="main-image">
-        <img src="gif.gif" alt="Genomik Veri Animasyonu">
-    </div>
+<body class="transparent">    
+    <header  class="transparent">
+        <h1>Genetik Kod Şifreleme ve Çözme</h1>
+        <nav  class="transparent">
+            <ul>
+                <li><a href="main.html">Ana Sayfa</a></li>
+                <li><a href="encryption.html">Proje</a></li>
+                <li><a href="about.html">Hakkımızda</a></li>
+                <li><a href="contact.html">İletişim</a></li>
+            </ul>
+        </nav>
+        <div  class="main-image">
+            <img src="gif.gif" alt="Genomik Veri Animasyonu">
+        </div>
+    </header>
+
     
+    <footer  class="transparent">
+        <p>&copy; 2023 Genetik Kod Projesi</p>
+    </footer>
 </body>
-<footer>
-    <p>&copy; 2023 Genetik Kod Projesi</p>
-</footer>
+
 
 </html>

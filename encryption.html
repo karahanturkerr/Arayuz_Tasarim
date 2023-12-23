@@ -5,6 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .accordion {
+            width: 100%;
+            padding: 15px;
+            
+            color: white;
+            cursor: pointer;
+            border: none;
+            text-align: left;
+            outline: none;
+        }
+
+        .panel {
+            display: none;
+            padding: 15px;
+            background-color: #f1f1f1;
+            transition: max-height 0.9s ease-out;
+            overflow: hidden;
+            max-height: 0;
+        }
+
+        .container:hover .panel {
+            max-height: 500px;
+        }
+
+        .accordion:hover + .panel {
+            display: block;
+        }
+
+        .accordion:hover {
+            background-color: #444;
+        }
+    </style>
 </head>
 <header>
     <h1>Genetik Kod Şifreleme ve Çözme</h1>
@@ -18,7 +61,30 @@
     </nav>
 </header>
 <body>
-    
+    <div class="container">
+        <button class="accordion">Proje Nedir</button>
+        <div class="panel">
+            <p>Proje açıklaması burada yer alabilir.</p>
+        </div>
+
+        <button class="accordion">Proje Amacı</button>
+        <div class="panel">
+            <p>Proje Amacı burada Açıklanmalı.</p>
+        </div>
+
+        <button class="accordion">Proje Özellikleri</button>
+        <div class="panel">
+            <p>Hangi teknolojilerin kullanıldığı.</p>
+            <p>Hangi özelliklere sahip olduğu.</p>
+            <p>Kullanılan programlama dilleri veya çerçeveler.</p>
+        </div>
+
+        <button class="accordion">Proje Üyeleri</button>
+        <div class="panel">
+            <p>Proje üzerinde çalışan ekip üyeleri veya katkıda bulunanlar.</p>
+            <p>Geliştirici, tasarımcı, tester gibi rollerin belirtilmesi.</p>
+        </div>
+    </div>
 </body>
 <footer>
     <p>&copy; 2023 Genetik Kod Projesi</p>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Üçlü Kart Yapısı</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            width: 200px;
+            height: 300px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 60%;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 10px;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .info {
+            display: none;
+            padding: 10px;
+            text-align: center;
+            background-color: #eee;
+        }
+
+        .card:hover .info {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <img src="team_image.jpg" alt="Team">
+    <div class="card-content">
+        <a href="team.html">Team</a>
+        <div class="info">
+            <p>Kuruluş ve Ekip Bilgileri</p>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <img src="school_image.jpg" alt="School">
+    <div class="card-content">
+        <a href="school.html">School</a>
+        <div class="info">
+            <p>Okul Bilgileri ve Hizmetleri</p>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <img src="teacher_image.jpg" alt="Teacher">
+    <div class="card-content">
+        <a href="teacher.html">Teacher</a>
+        <div class="info">
+            <p>Öğretmen Bilgileri ve Eğitim Yaklaşımları</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

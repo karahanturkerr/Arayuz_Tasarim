@@ -5,29 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <style>
+    <style> 
+        .card {
+            width: 450px;
+            height: 600px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
 
+        .card:hover {
+            transform: scale(1.1);
+        }
+        .card img {
+            width: 100%;
+            height: 60%;
+            object-fit: cover;
+        }
 
-.team-member {
-    display: flex;
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    background-color: #fff;
-    border-radius: 8px;
-}
-
-img {
-    max-width: 100px;
-    border-radius: 65%;
-    margin-right: 30px;
-}
-
-.member-info {
-    flex: 1;
-}
-
-
+        .card-content {
+            padding: 10px;
+            text-align: center;
+        }
+        .info {
+            display: none;
+            padding: 10px;
+            text-align: center;
+            background-color: #eee;
+        }
+        .card:hover .info {
+            display: inline-block;
+        }
+        .card-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height:80vh;
+            margin-top: 10px;
+            
+        }
     </style>
 </head>
 
@@ -42,40 +59,42 @@ img {
                 <li><a href="encryption.html">Proje</a></li>
                 <li><a href="about.html">Hakkımızda</a></li>
                 <li><a href="contact.html">İletişim</a></li>
-                <li><a href="newLogin.html">Login</a></li>
+                <li><a href="login.html">Login</a></li>
             </ul>
         </nav>
     </header>
     
-    <section class="team-member">
-        <img src="1414.jpg" alt="İbrahim Yegen">
-        <div class="member-info">
-            <h2>İbrahim Yegen</h2>
-            <p>Full Stack Developer</p>
-            <p>Yaptığı Çalışmalar Yazılacak</p>
-            <a href="https://www.linkedin.com/in/ibrahimyegen/" target="_blank">LinkedIn Profili</a>
-
+    <div class="card-container">
+        <div class="card">
+            <img src="team.jpg" alt="Team">
+            <div class="card-content">
+                <a href="team.html">Team</a>
+                <div class="info">
+                    <p>Kuruluş ve Ekip Bilgileri</p>
+                </div>
+            </div>
         </div>
-    </section>
-    <section class="team-member">
-        <img src="member2.jpg" alt="Ekip Üyesi 2">
-        <div class="member-info">
-            <h2>Karahan Türker</h2>
-            <p>UI-UX Designer</p>
-            <p>Yaptığı Çalışmalar Yazılacak</p>
-            <a href="https://www.linkedin.com/in/karahantürker/" target="_blank">LinkedIn Profili</a>
+        
+        <div class="card">
+            <img src="school.gif" alt="School">
+            <div class="card-content">
+                <a href="school.html">School</a>
+                <div class="info">
+                    <p>Okul Bilgileri ve Hizmetleri</p>
+                </div>
+            </div>
         </div>
-    </section>
-
-    <section class="team-member">
-        <img src="member3.jpg" alt="Ekip Üyesi 3">
-        <div class="member-info">
-            <h2>Ayetullah Bakan</h2>
-            <p>.Net Developer</p>
-            <p>Yaptığı Çalışmalar Yazılacak.</p>
-            <a href="https://www.linkedin.com/in/ayetullahbakan/" target="_blank">LinkedIn Profili</a>
+        
+        <div class="card">
+            <img src="teacher.jpg" alt="Teacher">
+            <div class="card-content">
+                <a href="teacher.html">Teacher</a>
+                <div class="info">
+                    <p>Öğretmen Bilgileri ve Eğitim Yaklaşımları</p>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
 
     <footer>
         <p>&copy; 2023 Genetik Kod Projesi</p>

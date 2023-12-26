@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #007BFF;
+    background-color: #404040;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -39,7 +39,7 @@ textarea {
 }
 
 button {
-    background-color:#007BFF;
+    background-color:#404040;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -53,7 +53,7 @@ button:hover {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #007BFF;
+    background-color: #404040;
     color: #fff;
     position: fixed;
     bottom: 0;
